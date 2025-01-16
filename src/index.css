@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.App{
+  background: url(https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg);
+  background-size: cover;
+}
+.todo-container {
+  background-color: #b7a5df;
+  padding: 40px;
+  /* opacity: .9; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.todo-container input {
+  padding: 15px;
+  width: calc(100% - 30px);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.todo-container input:focus {
+  border-color: #81ff85;
+}
+
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item span {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+button.delete-btn {
+  background-color: #f44336;
+}
+
+button.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+button.edit-btn {
+  background-color: #2196F3;
+}
+
+button.edit-btn:hover {
+  background-color: #1976D2;
+}
