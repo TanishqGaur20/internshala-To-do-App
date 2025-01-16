@@ -30,7 +30,7 @@ This is a simple and interactive To-Do List application built with React. It all
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/TanishqGaur20/Internshala-Todo-List
+   git clone https://github.com/TanishqGaur20/internshala-To-do-App
    ```
 2. Navigate into the project directory:
 
@@ -61,4 +61,4 @@ This is a simple and interactive To-Do List application built with React. It all
 
 ## github link
 
-"https://github.com/TanishqGaur20/Internshala-Todo-List"
+"https://tanishqgaur20.github.io/internshala-To-do-App/"
