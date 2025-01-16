@@ -29,13 +29,16 @@ function Header({ length }) {
         : "th";
 
     return `${month} ${day}${suffix}`;
-  };
-  const date = "2025-10-13";
+  };  const date = new Date();
+  const formattedDate = `${date.getFullYear()}-${String(
+    date.getMonth() + 1
+  ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+  console.log(formattedDate);  
   return (
     <header className="bg-[#162B3B] w-full  h-24 flex justify-between px-4 lg:p-10  items-center  text-[#51E5FE]">
       <div>
         <p className="text-[#51E5FE] md:text-2xl lg:text-3xl">
-          {formatDate(date)}
+          {formatDate(formattedDate)}
         </p>
         <p className="text-xl md:text-2xl lg:text-3xl">{length} Active Tasks</p>
       </div>
